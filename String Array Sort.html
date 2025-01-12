@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Sorting</title>
+</head>
+<body>
+<h1>Javascript Array Sort</h1>
+<p>Click The Button To Sort The Array In Ascending And Descending Order!</p>
+<button onclick="ascending()">Ascending Order</button>
+<button onclick="descending()">Descending Order</button>
+<p id="result"></p>
+<script>
+var points = ["Virat Kohli","Smriti Mandhana","Rohit Sharma","Harmanpreet Kaur","Jaspreet Bumrah","Shreyanka Patil"];
+document.getElementById("result").innerHTML = points;
+function ascending() {
+document.getElementById("result").innerHTML = points.sort();
+}
+function descending() {
+document.getElementById("result").innerHTML = points.reverse();
+}
+</script>
+</body>
+</html>
